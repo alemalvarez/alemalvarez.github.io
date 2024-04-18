@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://alemalvarez.github.io/sitemap-index.xml
+Host: https://alemalvarez.github.io
