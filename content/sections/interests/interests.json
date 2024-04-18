@@ -1,58 +1,58 @@
 {
   "interests": [
     {
-      "label": "Quick and Easy Setup",
+      "label": "Advanced Python",
       "image": {
-        "src": "../../images/joystick.png",
+        "src": "../../images/python.png",
         "alt": ""
       }
     },
     {
-      "label": "Content via Markdown",
+      "label": "Machine Learning",
       "image": {
-        "src": "../../images/notebook.png",
+        "src": "../../images/ml.png",
         "alt": ""
       }
     },
     {
-      "label": "Responsive Design",
+      "label": "PyTorch",
       "image": {
-        "src": "../../images/nail-polish.png",
+        "src": "../../images/pytorch.svg.png",
         "alt": ""
       }
     },
     {
-      "label": "Medium Integration",
+      "label": "TensorFlow",
       "image": {
-        "src": "../../images/medium.png",
+        "src": "../../images/tf.svg.png",
         "alt": ""
       }
     },
     {
-      "label": "Animations",
+      "label": "SQL",
       "image": {
-        "src": "../../images/gem-stone.png",
+        "src": "../../images/db.png",
         "alt": ""
       }
     },
     {
-      "label": "PWA (Offline Support)",
+      "label": "Docker",
       "image": {
-        "src": "../../images/mobile-phone.png",
+        "src": "../../images/docker.png",
         "alt": ""
       }
     },
     {
-      "label": "Modern Tech-Stack",
+      "label": "Git + Actions",
       "image": {
-        "src": "../../images/gatsby.png",
+        "src": "../../images/git.png",
         "alt": ""
       }
     },
     {
-      "label": "Blazing Fast",
+      "label": "Azure",
       "image": {
-        "src": "../../images/high-voltage.png",
+        "src": "../../images/azure.png",
         "alt": ""
       }
     }
