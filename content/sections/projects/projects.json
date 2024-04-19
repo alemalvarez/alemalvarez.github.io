@@ -20,7 +20,7 @@
     },
     {
       "visible": true,
-      "category": "🧰 Hackathon",
+      "category": "Hackathon 🧰",
       "title": "Chunkify.ai - Where tasks meet their match, one chunk at a time",
       "description": "Chunkify employs Anthropic's API to break down your projects into small, actionable tasks.",
       "tags": ["LLM", "Azure", "Anthropic"],

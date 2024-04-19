@@ -1,7 +1,7 @@
 {
   "intro": "Hola",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "../../images/emoji.png",
     "alt": "My Photo"
   },
   "image": {
