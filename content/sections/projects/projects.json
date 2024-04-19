@@ -7,7 +7,7 @@
       "description": "A college scheduler that uses GPT-3.5 to generate schedules based on available courses and student requisites.",
       "tags": ["LLM", "OpenAI", "Help wanted!"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
+        "src": "../../images/scheduler.png",
         "alt": "Quick Setup",
         "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
       },
@@ -32,6 +32,11 @@
         {
           "type": "github",
           "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        },
+        {
+          "type": "external",
+          "url": "https://chunkify.azurewebsites.net/"
+        
         }
       ]
     }

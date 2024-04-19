@@ -3,8 +3,8 @@
   "email": "alemalvarez@icloud.com",
   "description": "Send ideas, suggestions, invitations, books & papers, cool photos, recipes, chess.com challenges, Spotify playlists or just say hi!",
   "image": {
-    "src": "../../images/favicon.png",
-    "alt": "All CAPS letter A"
+    "src": "../../images/emoji.png",
+    "alt": "Alejandro working Emoji"
   },
   "socialProfiles": {
     "from": ["LinkedIn", "Github", "Mail"],

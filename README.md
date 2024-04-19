@@ -1,12 +1,7 @@
-<img src="screenshot.png" alt="Gatsby Theme Portfolio Minimal Screenshot" width="700" />
 
-<a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme" target="_blank">
-<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud" />
-</a>
+# Alejandro's portfolio
 
-# Gatsby Starter Portfolio Minimal Theme
-
-#### A Gatsby Starter Project to easily get started with the Portfolio Minimal Theme.
+#### Built using Portfolio Minimal Gatsby Theme!
 
 Portfolio Minimal is a Gatsby Theme that let's you create outstanding one-page portfolios within minutes. This Gatsby Starter is a boilerplate project that has the theme pre-installed and pre-configured.
 
