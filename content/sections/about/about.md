@@ -3,12 +3,16 @@ imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
 imageAlt: "About Alejandro Mata"
 ---
 
-Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
+## About Me
 
-It has predefined sections for your bio, skills, projects, and contact details. If you are a writer on Medium, you can integrate your latest articles in a distinct section as well. While building the theme, I tried to keep the setup as simple as possible while keeping everything configurable if you like to.
+I am Alejandro Mata, a software developer with a passion for creating innovative and efficient solutions. I have experience in various programming languages and frameworks, and I enjoy working on both front-end and back-end development.
 
-Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
+In my free time, I love to explore new technologies and contribute to open-source projects. I believe in continuous learning and strive to stay updated with the latest industry trends.
 
-Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
+Feel free to reach out to me if you have any questions or would like to collaborate on a project.
+
+![About Alejandro Mata](../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg)
+
+Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
 
 Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash

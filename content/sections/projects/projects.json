@@ -5,7 +5,7 @@
       "category": "Open Source 🌐",
       "title": "LLM-Powered college autoscheduler",
       "description": "A college scheduler that uses GPT-3.5 to generate schedules based on available courses and student requisites.",
-      "tags": ["LLM", "Help wanted!"],
+      "tags": ["LLM", "OpenAI", "Help wanted!"],
       "image": {
         "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
         "alt": "Quick Setup",
@@ -21,9 +21,9 @@
     {
       "visible": true,
       "category": "🧰 Hackathon",
-      "title": "Chunkify.ai - ",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      "title": "Chunkify.ai - Where tasks meet their match, one chunk at a time",
+      "description": "Chunkify employs Anthropic's API to break down your projects into small, actionable tasks.",
+      "tags": ["LLM", "Azure", "Anthropic"],
       "image": {
         "src": "../../images/chunkify.png",
         "alt": "Extendable Layout"
