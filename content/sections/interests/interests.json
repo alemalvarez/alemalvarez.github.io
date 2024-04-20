@@ -4,56 +4,112 @@
       "label": "Advanced Python",
       "image": {
         "src": "../../images/python.png",
-        "alt": ""
-      }
-    },
-    {
-      "label": "Machine Learning",
-      "image": {
-        "src": "../../images/ml.png",
-        "alt": ""
+        "alt": "Python"
       }
     },
     {
       "label": "PyTorch",
       "image": {
-        "src": "../../images/pytorch.svg.png",
-        "alt": ""
+        "src": "../../images/pytorch.webp",
+        "alt": "PyTorch"
+      }
+    },
+    {
+      "label": "Keras",
+      "image": {
+        "src": "../../images/keras.png",
+        "alt": "Keras"
+      }
+    },
+    {
+      "label": "Scikit-learn",
+      "image": {
+        "src": "../../images/ml.png",
+        "alt": "ML"
       }
     },
     {
       "label": "TensorFlow",
       "image": {
         "src": "../../images/tf.svg.png",
-        "alt": ""
+        "alt": "TensorFlow"
       }
     },
     {
       "label": "SQL",
       "image": {
         "src": "../../images/db.png",
-        "alt": ""
+        "alt": "DB"
       }
     },
     {
       "label": "Docker",
       "image": {
         "src": "../../images/docker.png",
-        "alt": ""
+        "alt": "Docker"
       }
     },
     {
       "label": "Git + Actions",
       "image": {
         "src": "../../images/git.png",
-        "alt": ""
+        "alt": "Git"
       }
     },
     {
       "label": "Azure",
       "image": {
         "src": "../../images/azure.png",
-        "alt": ""
+        "alt": "Azure"
+      }
+    },
+    {
+      "label": "AWS",
+      "image": {
+        "src": "../../images/aws.webp",
+        "alt": "AWS"
+      }
+    },
+    {
+      "label": "Java",
+      "image": {
+        "src": "../../images/java.webp",
+        "alt": "Java"
+      }
+    },
+    {
+      "label": "C",
+      "image": {
+        "src": "../../images/c.svg.png",
+        "alt": "C"
+      }
+    },
+    {
+      "label": "MongoDB",
+      "image": {
+        "src": "../../images/mongo.webp",
+        "alt": "MongoDB"
+      }
+    },
+    {
+      "label": "GraphQL",
+      "image": {
+        "src": "../../images/graphql.svg.png",
+        "alt": "GraphQL"
+      }
+    },
+    {
+      "label": "Power BI",
+      "image": {
+        "src": "../../images/powerbi.svg.png",
+        "alt": "Power BI"
+      }
+    },
+    {
+      "label": "Tableau",
+      "image": {
+        "src": "../../images/tableau.png",
+        "alt": "Tableau"
       }
     }
   ],

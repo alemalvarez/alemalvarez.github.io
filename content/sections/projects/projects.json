@@ -8,8 +8,8 @@
       "tags": ["LLM", "OpenAI", "Help wanted!"],
       "image": {
         "src": "../../images/scheduler.png",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "alt": "Auto Scheduler",
+        "linkTo": "https://github.com/alemalvarez/auto-scheduler"
       },
       "links": [
         {
@@ -26,17 +26,36 @@
       "tags": ["LLM", "Azure", "Anthropic"],
       "image": {
         "src": "../../images/chunkify.png",
-        "alt": "Extendable Layout"
+        "alt": "Chunkify.ai",
+        "linkTo": "https://chunkify.azurewebsites.net/"
       },
       "links": [
         {
           "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+          "url": "https://github.com/alemalvarez/ai-hackathon"
         },
         {
           "type": "external",
           "url": "https://chunkify.azurewebsites.net/"
         
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "Open Source 🌐",
+      "title": "PyTorch learning notebooks + tensor development toolkit ",
+      "description": "Based on the code from the book 'Deep Learning with Python' by François Chollet. This repo translates the learning code into PyTorch and adds some useful development tools.",
+      "tags": ["PyTorch", "Deep Learning", "Help wanted!"],
+      "image": {
+        "src": "../../images/notebooks.png",
+        "alt": "PyTorch notebooks",
+        "linkTo": "https://github.com/alemalvarez/dl-with-python-pytorch"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/alemalvarez/dl-with-python-pytorch"
         }
       ]
     }

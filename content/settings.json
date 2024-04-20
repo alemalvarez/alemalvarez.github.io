@@ -6,7 +6,7 @@
     "titleTemplate": "%s · Portfolio",
     "description": "",
     "author": "Alejandro Mata",
-    "avatar": "../content/images/gatsby.png",
+    "avatar": "../content/images/favicon.png",
     "bio": "Deep Learning developer because there were too many philosophers",
     "social": {
       "github": "https://github.com/alemalvarez/",
