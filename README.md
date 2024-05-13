@@ -1,49 +1,27 @@
+# Alejandro's portolio code
 
-# Alejandro's portfolio
+[![Gatsby](https://img.shields.io/badge/Built%20with-Gatsby-blueviolet?style=flat-square&logo=gatsby)](https://www.gatsbyjs.com/) [![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/) [![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen?style=flat-square&logo=github)](https://pages.github.com/)
 
-#### Built using Portfolio Minimal Gatsby Theme!
+This is the official repository for my personal portfolio website, built with the lovely static site generator [Gatsby](https://www.gatsbyjs.com/), and deployed using the [`gh-pages`](https://www.npmjs.com/package/gh-pages) Node package. 🚀
 
-Portfolio Minimal is a Gatsby Theme that let's you create outstanding one-page portfolios within minutes. This Gatsby Starter is a boilerplate project that has the theme pre-installed and pre-configured.
+## About 📚
 
-Just clone this Gatsby Starter, add the content. And that's it!
+My portfolio website showcases my skills, projects, and experience as a developer. It's built with Gatsby, a blazing-fast React-based framework that generates static websites for optimal performance and security. The site is deployed on GitHub Pages, making it easily accessible and shareable.<br>
+This readme was, of course, written by Anthropic's Claude Opus ;)
 
-[Live Demo on Gatsby Cloud](https://gatsbystarterportfoliominimalt.gatsbyjs.io/) · [Live Demo on Netlify](https://gatsby-starter-portfolio-minimal-theme.netlify.app/) · [Portfolio Minimal Theme on Github](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal)
+## Suggestions and Contributions 🤝
 
----
+I'm always open to suggestions and contributions from the community! If you have any ideas for improving the website, whether it's adding new features, fixing bugs, or enhancing the overall user experience, feel free to submit an issue or a pull request. Let's make this portfolio website even better together! 🌟
 
-## Installation
+## Technologies Used 🛠️
 
-1. Install the Gatsby CLI
+- [Gatsby](https://www.gatsbyjs.com/)
+- [React](https://reactjs.org/)
+- [GitHub Pages](https://pages.github.com/)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
+## License 📄
 
-2. Create a new Gatsby site with the Portfolio Minimal Starter.
+This project is licensed under the [0BSD](LICENSE).
 
-   ```sh
-   gatsby new portfolio-minimal https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme
-   ```
-
-3. Once installed, you can begin developing your site.
-
-   ```sh
-   cd portfolio-minimal
-   gatsby develop
-   ```
-
-4. By default, the Portfolio Minimal Starter has a `content` directory at the root of your Gatsby site. There, you can edit the theme settings as well as add content for your sections. To learn more about it, have a look at the [Readme of Portfolio Minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal/tree/main/gatsby-theme-portfolio-minimal#readme).
-
----
-
-## Issues?
-
-If you find any bugs or have feature suggestions, create a new issue or pull request 🙏
-
-Thanks a lot for using this starter! 💪
-
----
-
-<a href="https://www.buymeacoffee.com/kmuenster" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-Konstantin Münster – [konstantin.digital](https://konstantin.digital)
+Made with ❤️ by Alejandro Mata
