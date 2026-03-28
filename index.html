@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Mata</title>
+  <meta name="description" content="Product Engineer. Barcelona.">
+  <meta property="og:title" content="Alejandro Mata">
+  <meta property="og:description" content="I build software that works — whether it involves AI or not.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alemalvarez.github.io">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>—</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSJNYHE8G7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SSJNYHE8G7', { anonymize_ip: true });
+  </script>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #1a1916;
+      --fg: #e8e4dc;
+      --dim: #6b6760;
+      --accent: #c4a46e;
+      --serif: 'Instrument Serif', Georgia, serif;
+      --mono: 'DM Mono', 'Courier New', monospace;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: var(--dim) transparent;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--mono);
+      overflow-x: hidden;
+      cursor: crosshair;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* --- grain overlay --- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 200px;
+    }
+
+    /* --- cursor glow --- */
+    .cursor-glow {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      background: radial-gradient(circle, rgba(196,164,110,0.06) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+
+    body:hover .cursor-glow { opacity: 1; }
+
+    /* --- hero --- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 3rem;
+      position: relative;
+    }
+
+    .hero__meta {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--dim);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.3s;
+    }
+
+    .hero__name {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(4rem, 13vw, 14rem);
+      line-height: 0.88;
+      letter-spacing: -0.03em;
+      color: var(--fg);
+      opacity: 0;
+      animation: fadeUp 1s ease forwards 0.1s;
+    }
+
+    .hero__name em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero__tagline {
+      font-family: var(--mono);
+      font-size: clamp(0.8rem, 1.5vw, 1rem);
+      font-weight: 300;
+      color: var(--dim);
+      margin-top: 2rem;
+      max-width: 42ch;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 0.6s;
+    }
+
+    .hero__tagline .emdash {
+      color: var(--accent);
+      margin: 0 0.15em;
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 3rem;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      color: var(--dim);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards 1s;
+    }
+
+    .hero__scroll::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: var(--dim);
+      margin-top: 0.75rem;
+      margin-left: auto;
+      margin-right: auto;
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    /* --- divider strip --- */
+    .divider {
+      overflow: hidden;
+      padding: 1rem 0;
+      border-top: 1px solid rgba(196,164,110,0.15);
+      border-bottom: 1px solid rgba(196,164,110,0.15);
+    }
+
+    .divider__track {
+      display: flex;
+      white-space: nowrap;
+      animation: marquee 25s linear infinite;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 300;
+      color: var(--dim);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .divider__track span {
+      flex-shrink: 0;
+      padding: 0 2rem;
+    }
+
+    .divider__track .emdash {
+      color: var(--accent);
+    }
+
+    /* --- experience --- */
+    .experience {
+      padding: 6rem 3rem;
+    }
+
+    .experience__label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      color: var(--dim);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 4rem;
+    }
+
+    .role {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 3rem 0;
+      border-top: 1px solid rgba(107,103,96,0.2);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .role.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .role__company {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    .role__company .yc {
+      font-family: var(--mono);
+      font-size: 0.6em;
+      color: var(--accent);
+      vertical-align: super;
+      margin-left: 0.3em;
+      font-weight: 400;
+    }
+
+    .role__title {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-top: 0.5rem;
+    }
+
+    .role__period {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 300;
+      color: var(--dim);
+      margin-top: 0.5rem;
+    }
+
+    .role__detail {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--dim);
+      line-height: 1.7;
+      max-width: 50ch;
+    }
+
+    .role__detail strong {
+      color: var(--fg);
+      font-weight: 400;
+    }
+
+    .role__detail .emdash {
+      color: var(--accent);
+    }
+
+    /* --- education marquee --- */
+    .education {
+      padding: 1.2rem 0;
+      border-top: 1px solid rgba(196,164,110,0.15);
+      border-bottom: 1px solid rgba(196,164,110,0.15);
+      overflow: hidden;
+    }
+
+    .education__track {
+      display: flex;
+      white-space: nowrap;
+      animation: marquee-reverse 35s linear infinite;
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      color: var(--dim);
+      opacity: 0.4;
+    }
+
+    .education__track span {
+      flex-shrink: 0;
+      padding: 0 3rem;
+    }
+
+    .education__track .dot {
+      color: var(--accent);
+    }
+
+    /* --- contact / footer --- */
+    .contact {
+      padding: 8rem 3rem 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    .contact__label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      font-weight: 300;
+      color: var(--dim);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .contact__link {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 4.5rem);
+      color: var(--fg);
+      text-decoration: none;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      transition: color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+      position: relative;
+    }
+
+    .contact__link::after {
+      content: '';
+      position: absolute;
+      bottom: 0.05em;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--accent);
+      transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .contact__link:hover {
+      color: var(--accent);
+    }
+
+    .contact__link:hover::after {
+      width: 100%;
+    }
+
+    .footer {
+      padding: 3rem 3rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      font-weight: 300;
+      color: var(--dim);
+      letter-spacing: 0.1em;
+      border-top: 1px solid rgba(107,103,96,0.1);
+    }
+
+    .footer__emdash {
+      font-size: 2rem;
+      color: var(--accent);
+      opacity: 0.3;
+      line-height: 1;
+    }
+
+    /* --- animations --- */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; height: 40px; }
+      50% { opacity: 1; height: 60px; }
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes marquee-reverse {
+      from { transform: translateX(-50%); }
+      to { transform: translateX(0); }
+    }
+
+    /* --- responsive --- */
+    @media (max-width: 768px) {
+      .hero { padding: 2rem 1.5rem; }
+      .experience { padding: 4rem 1.5rem; }
+      .contact { padding: 5rem 1.5rem 3rem; }
+      .footer { padding: 2rem 1.5rem; }
+
+      .role {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .hero__scroll { display: none; }
+    }
+
+    /* --- selection --- */
+    ::selection {
+      background: var(--accent);
+      color: var(--bg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="cursor-glow" id="glow"></div>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <p class="hero__meta">Barcelona <span style="color:var(--accent);">&mdash;</span> Product Engineer</p>
+  <h1 class="hero__name">Alejandro<br><em>Mata</em></h1>
+  <p class="hero__tagline">
+    I build software that works <span class="emdash">&mdash;</span> whether it involves AI or not.<br>
+    Unironic em-dash appreciator.
+  </p>
+  <span class="hero__scroll">scroll</span>
+</section>
+
+<!-- ====== DIVIDER ====== -->
+<div class="divider">
+  <div class="divider__track">
+    <span>React.js <span class="emdash">&mdash;</span> Full-Stack Development <span class="emdash">&mdash;</span> Product Engineering <span class="emdash">&mdash;</span> Python <span class="emdash">&mdash;</span> Docker <span class="emdash">&mdash;</span> FastAPI <span class="emdash">&mdash;</span> PyTorch <span class="emdash">&mdash;</span> Redis <span class="emdash">&mdash;</span> Grafana <span class="emdash">&mdash;</span> GraphQL <span class="emdash">&mdash;</span> AWS <span class="emdash">&mdash;</span></span>
+    <span>React.js <span class="emdash">&mdash;</span> Full-Stack Development <span class="emdash">&mdash;</span> Product Engineering <span class="emdash">&mdash;</span> Python <span class="emdash">&mdash;</span> Docker <span class="emdash">&mdash;</span> FastAPI <span class="emdash">&mdash;</span> PyTorch <span class="emdash">&mdash;</span> Redis <span class="emdash">&mdash;</span> Grafana <span class="emdash">&mdash;</span> GraphQL <span class="emdash">&mdash;</span> AWS <span class="emdash">&mdash;</span></span>
+  </div>
+</div>
+
+<!-- ====== EXPERIENCE ====== -->
+<section class="experience">
+  <p class="experience__label">Experience</p>
+
+  <article class="role">
+    <div>
+      <h2 class="role__company">haddock<span class="yc">YC W22</span></h2>
+      <p class="role__title">AI Product Engineer</p>
+      <p class="role__period">Nov 2025 <span style="color:var(--accent);">&mdash;</span> Present &middot; Barcelona</p>
+    </div>
+    <div class="role__detail"></div>
+  </article>
+
+  <article class="role">
+    <div>
+      <h2 class="role__company">Factor Energia</h2>
+      <p class="role__title">AI Engineer, Voice</p>
+      <p class="role__period">Jan 2025 <span style="color:var(--accent);">&mdash;</span> Nov 2025 &middot; Barcelona</p>
+    </div>
+    <div class="role__detail">
+      Built a <strong>sub-2s latency voice agent</strong> framework automating 60%+ of customer support calls. Owned the full stack <span class="emdash">&mdash;</span> backend APIs, monitoring, semantic clustering for intention analysis. All stakeholders loved the Grafana dashboards.
+    </div>
+  </article>
+
+  <article class="role">
+    <div>
+      <h2 class="role__company">Student Investment Fund</h2>
+      <p class="role__title">Software Engineer, Data Pipelines</p>
+      <p class="role__period">Jan 2024 <span style="color:var(--accent);">&mdash;</span> Jul 2024 &middot; Sacramento, CA</p>
+    </div>
+    <div class="role__detail">
+      Cut data processing from <strong>hours to seconds</strong>. Built financial insights pipeline, filtered 90% of unreliable data automatically. Deployed to AWS with zero downtime. The team <strong>outperformed the S&P 500</strong>.
+    </div>
+  </article>
+
+  <article class="role">
+    <div>
+      <h2 class="role__company">Vibia</h2>
+      <p class="role__title">IoT Intern</p>
+      <p class="role__period">Apr 2023 <span style="color:var(--accent);">&mdash;</span> Aug 2023 &middot; Barcelona</p>
+    </div>
+    <div class="role__detail">
+      Pioneered smart product testing with a Jira-integrated ecosystem and a GraphQL API <span class="emdash">&mdash;</span> reduced reporting time from hours to minutes. Explained it all to the C-suite.
+    </div>
+  </article>
+</section>
+
+<!-- ====== EDUCATION MARQUEE ====== -->
+<div class="education">
+  <div class="education__track">
+    <span>Universidad de Valladolid <span class="dot">&bull;</span> Computer Systems & Telecom</span>
+    <span>University of Barcelona <span class="dot">&bull;</span> Business Administration</span>
+    <span>California State University, Sacramento <span class="dot">&bull;</span> Business Statistics</span>
+    <span>Universidad de Valladolid <span class="dot">&bull;</span> Computer Systems & Telecom</span>
+    <span>University of Barcelona <span class="dot">&bull;</span> Business Administration</span>
+    <span>California State University, Sacramento <span class="dot">&bull;</span> Business Statistics</span>
+  </div>
+</div>
+
+<!-- ====== CONTACT ====== -->
+<section class="contact">
+  <p class="contact__label">Say hello</p>
+  <a class="contact__link" href="mailto:alemalvarez@icloud.com">alemalvarez@icloud.com</a>
+  <a class="contact__link" href="https://www.linkedin.com/in/alemalvarez/" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="contact__link" href="https://github.com/alemalvarez/" target="_blank" rel="noopener">GitHub</a>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <span>&copy; 2025 Alejandro Mata</span>
+  <span class="footer__emdash">&mdash;</span>
+</footer>
+
+<script>
+  // cursor glow
+  const glow = document.getElementById('glow');
+  let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  (function animate() {
+    glowX += (mouseX - glowX) * 0.08;
+    glowY += (mouseY - glowY) * 0.08;
+    glow.style.left = glowX + 'px';
+    glow.style.top = glowY + 'px';
+    requestAnimationFrame(animate);
+  })();
+
+  // scroll reveal for roles
+  const roles = document.querySelectorAll('.role');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 120);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  roles.forEach(role => observer.observe(role));
+</script>
+
+</body>
+</html>
