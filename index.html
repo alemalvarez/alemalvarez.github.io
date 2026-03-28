@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Mata — Deep Learning Developer</title>
+  <meta name="description" content="Alejandro Mata — Data Scientist & Deep Learning developer focused on academic research and open source.">
+  <meta name="author" content="Alejandro Mata">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alejandro Mata — Deep Learning Developer">
+  <meta property="og:description" content="Data Scientist & Deep Learning developer focused on academic research and open source.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alemalvarez.github.io">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">am<span class="accent">.</span></a>
+      <div class="nav__links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#tech">Tech</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" class="nav__cta">Resume</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#tech">Tech</a>
+    <a href="#contact">Contact</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__greeting reveal">Hola, I'm</p>
+      <h1 class="hero__name reveal">Alejandro<br>Mata<span class="accent">.</span></h1>
+      <p class="hero__tagline reveal">
+        I build things with <span class="accent">Deep Learning</span> — because there were too many philosophers.
+      </p>
+      <p class="hero__description reveal">
+        Data Scientist focused on academic research and open source.
+      </p>
+      <div class="hero__socials reveal">
+        <a href="https://github.com/alemalvarez/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/alemalvarez/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:alemalvarez@icloud.com" aria-label="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__photo reveal">
+      <div class="hero__photo-wrapper">
+        <img src="images/headshot.jpg" alt="Alejandro Mata" loading="eager">
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section" id="about">
+    <div class="section__inner">
+      <h2 class="section__title reveal">About me<span class="accent">.</span></h2>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            As I was unsure on what degree to choose, I decided to play it safe and pursue both an Engineering degree and a Business one, and eventually find my path. Three universities and four years later, I finally know: <strong>Deep Learning</strong>.
+          </p>
+          <p>
+            I genuinely believe that AI, and specially Neural Networks, have the potential to make the world a better place — and I'm here for that. My goal is to stay at the bleeding edge of DL research, bridging cognitive science, applied math, and scientific computation.
+          </p>
+        </div>
+        <div class="about__image reveal">
+          <img src="images/working.jpg" alt="Alejandro working">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects section" id="projects">
+    <div class="section__inner">
+      <h2 class="section__title reveal">Projects<span class="accent">.</span></h2>
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <img src="images/scheduler.png" alt="Auto Scheduler">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__category">Open Source</span>
+            <h3 class="project-card__title">LLM-Powered College Autoscheduler</h3>
+            <p class="project-card__desc">A college scheduler that uses LLMs to generate schedules based on available courses and student requisites.</p>
+            <div class="project-card__tags">
+              <span>LLM</span>
+              <span>OpenAI</span>
+              <span>Help wanted!</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/alemalvarez/auto-scheduler" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>Source</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <img src="images/chunkify.png" alt="Chunkify.ai">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__category">Hackathon</span>
+            <h3 class="project-card__title">Chunkify.ai</h3>
+            <p class="project-card__desc">Where tasks meet their match, one chunk at a time. Employs Anthropic's API to break down projects into small, actionable tasks.</p>
+            <div class="project-card__tags">
+              <span>LLM</span>
+              <span>Azure</span>
+              <span>Anthropic</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/alemalvarez/ai-hackathon" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>Source</span>
+              </a>
+              <a href="https://chunkify.azurewebsites.net/" target="_blank" rel="noopener" aria-label="Live demo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>Live</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <img src="images/notebooks.png" alt="PyTorch notebooks">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__category">Open Source</span>
+            <h3 class="project-card__title">PyTorch Learning Notebooks</h3>
+            <p class="project-card__desc">Deep Learning with Python translated to PyTorch, plus a tensor development toolkit. Based on Francois Chollet's book.</p>
+            <div class="project-card__tags">
+              <span>PyTorch</span>
+              <span>Deep Learning</span>
+              <span>Help wanted!</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/alemalvarez/dl-with-python-pytorch" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>Source</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH ============ -->
+  <section class="tech section" id="tech">
+    <div class="section__inner">
+      <h2 class="section__title reveal">My tech<span class="accent">.</span></h2>
+      <div class="tech__grid reveal">
+        <div class="tech__item">
+          <img src="images/python.png" alt="Python">
+          <span>Python</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/pytorch.webp" alt="PyTorch">
+          <span>PyTorch</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/keras.png" alt="Keras">
+          <span>Keras</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/ml.png" alt="Scikit-learn">
+          <span>Scikit-learn</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/tf.svg.png" alt="TensorFlow">
+          <span>TensorFlow</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/db.png" alt="SQL">
+          <span>SQL</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/docker.png" alt="Docker">
+          <span>Docker</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/git.png" alt="Git">
+          <span>Git + Actions</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/azure.png" alt="Azure">
+          <span>Azure</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/aws.webp" alt="AWS">
+          <span>AWS</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/java.webp" alt="Java">
+          <span>Java</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/c.svg.png" alt="C">
+          <span>C</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/mongo.webp" alt="MongoDB">
+          <span>MongoDB</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/graphql.svg.png" alt="GraphQL">
+          <span>GraphQL</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/powerbi.svg.png" alt="Power BI">
+          <span>Power BI</span>
+        </div>
+        <div class="tech__item">
+          <img src="images/tableau.png" alt="Tableau">
+          <span>Tableau</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact section" id="contact">
+    <div class="section__inner">
+      <h2 class="section__title reveal">Get in touch<span class="accent">.</span></h2>
+      <div class="contact__content reveal">
+        <p class="contact__text">
+          Send ideas, suggestions, invitations, books & papers, cool photos, recipes, chess.com challenges, Spotify playlists — or just say hi!
+        </p>
+        <a href="mailto:alemalvarez@icloud.com" class="contact__button">
+          Say hello
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <div class="contact__socials">
+          <a href="https://github.com/alemalvarez/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/alemalvarez/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:alemalvarez@icloud.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">am<span class="accent">.</span></span>
+      <span class="footer__copy">&copy; 2024 Alejandro Mata</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
